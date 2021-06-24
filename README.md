@@ -9,7 +9,7 @@ See the status of your minecraft server!
 2. Insert the following code for a good result:
 ```
 const { status } = require("minecraft-server-stats");
-status('mc.hypixel.net', response => {
+status('mc.hypixel.net').then(response => {
     console.log(response)
 })
 ```
@@ -18,7 +18,7 @@ status('mc.hypixel.net', response => {
 - Ping
 ```
 const { ping } = require("minecraft-server-stats");
-ping('mc.hypixel.net', response => {
+ping('mc.hypixel.net').then(response => {
     console.log(response)
 })
 ```
@@ -26,7 +26,7 @@ ping('mc.hypixel.net', response => {
 - Playerlist
 ```
 const { playerList } = require("minecraft-server-stats");
-playerList('mc.hypixel.net', response => {
+playerList('mc.hypixel.net').then(response => {
     console.log(response)
 })
 ```
